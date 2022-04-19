@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGDSD</title>
+    <link rel="icon" href="sdi.jpg" type="image/icon">
+    <script type="text/javascript">
+    function validate()
+        {
+            var Username=document.getElementById("name");
+            var password=document.getElementById("pas");
+
+            if(Username.value==""||password.value=="")
+            {
+                alert("No blank value is Allowed");
+                return false;
+            }
+            else{
+               return alert("Welcome To GGDSD collage chandigarh");
+                
+            }
+        }
+    </script>
+    <!-- <script type="text/javascript">
+        function setNewImage(){
+             document.getElementById("img1").src="sd.jpg";
+            
+        }
+        function setOldImage(){
+            document.getElementById("img1").src="sda.jpg";
+        }
+
+        </script> -->
+    <style>
+       .img1{
+        width: 40%;
+        height: 10%;
+        border-radius: 5%;
+       }
+       input[type=text], input[type=password] {   
+        width: 40%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid #ee361d;   
+        box-sizing: border-box; 
+        border-radius: 20%;  
+    }  
+ button:hover {   
+    opacity: 0.7;   
+    width: 300px;
+    }   
+    .container {      
+        background-color: rgb(233, 211, 10);
+        border-radius: 50%;
+    }   
+    Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(248, 138, 11);  
+}  
+button {   
+       background-color: #ee361d;   
+       width: 30%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer; 
+        border-radius: 20%;  
+         }   
+ form {   
+        border: 3px solid #ee361d; 
+        border-radius: 50%;  
+    }   
+    </style>
+
+</head>
+<body bgcolor="orange">
+<br><br>
+    <center><a href="http://ggdsd.ac.in/" target="blank"><img src="sd.jpg" class="img1" id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" alt="this image is not available"></a></center>
+    <br>
+   
+    <center><form onsubmit="return validate()" action="collageform.html">
+        <h2>Admission Login Form</h2>
+        <div class="container">
+        <br><br><br>
+        <label for="name"><b>Enter full Name</b></label>
+       <input type="text" placeholder="Name" id="name" required>
+       <br><br>
+       <label for="pasword"><b>Password</b></label>
+       <input type="password" placeholder="Passward" id="pas" required>
+       <br><br>
+       <button type="submit" onclick="validate()">Submit</button>
+    </div>
+    </form></center>
+</body>
+</html>
